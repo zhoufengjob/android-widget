@@ -51,14 +51,14 @@ public class SwipeSelectorAdapter extends PagerAdapter {
 		this.rightTv = right;
 		this.centerVp = center;
 	}
-	
+
 	/**
 	 * create page
 	 * @param container
 	 * @param position
 	 */
-   	@Override
-   	public Object instantiateItem(ViewGroup container, int position) {
+	@Override
+	public Object instantiateItem(ViewGroup container, int position) {
 		// center text
 		TextView centerText = new TextView(context);
 		centerText.setText(textList[position]);
@@ -71,32 +71,32 @@ public class SwipeSelectorAdapter extends PagerAdapter {
 		
 		return centerText;
 	}
-   	
-   	/**
-   	 * set text
-   	 * @param textList
-   	 */
-   	public void setText(String[] textList) {
-   		this.textList = textList;
-   	}
 
-   	/**
-   	 * destroy item
-   	 * @param container
-   	 * @param position
-   	 * @param object
-   	 */
+	/**
+	 * set text
+	 * @param textList
+	 */
+	public void setText(String[] textList) {
+		this.textList = textList;
+	}
+
+	/**
+	 * destroy item
+	 * @param container
+	 * @param position
+	 * @param object
+	 */
 	@Override
 	public void destroyItem(ViewGroup container, int position, Object object) {
 		((ViewPager)container).removeView((View)object);
 	}
- 
+
 	/**
 	 * get count
 	 */
 	@Override
 	public int getCount() {
-    	return textList.length;
+		return textList.length;
 	}
  
 	/**
@@ -117,15 +117,15 @@ public class SwipeSelectorAdapter extends PagerAdapter {
 	@Override
 	public void finishUpdate(View arg0) {
 		int position = centerVp.getCurrentItem();
-   		// set left text
-   		String text = position == 0 ? "" : leftArrow;
-   		leftTv.setText(text);
-   			
+		// set left text
+		String text = position == 0 ? "" : leftArrow;
+		leftTv.setText(text);
+
 		// set right text
 		text = position + 1 == this.getCount() ? "" : rightArrow;
 		rightTv.setText(text);
 	}
-	
+
 	/**
 	 * set left arrow
 	 * @param arrow
