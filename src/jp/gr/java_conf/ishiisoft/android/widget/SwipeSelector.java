@@ -13,6 +13,7 @@ import android.widget.TextView;
 /**
  * SwipeSelector class
  * select item with swipe
+ * MIT Licensed.
  * 
  * @author ishiisoft
  */

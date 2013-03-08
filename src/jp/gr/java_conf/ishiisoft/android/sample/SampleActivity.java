@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 /**
  * sample activity
+ * MIT Licensed.
+ * 
  * @author ishiisoft
  */
 public class SampleActivity extends Activity {

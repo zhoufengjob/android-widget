@@ -11,6 +11,7 @@ import android.widget.TextView;
 /**
  * swipe selector adapter class
  * uses SwipeSelector class
+ * MIT Licensed.
  * 
  * @author ishiisoft
  */

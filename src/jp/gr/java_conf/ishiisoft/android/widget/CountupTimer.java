@@ -11,6 +11,7 @@ import android.widget.TextView;
 /**
  * CountupTimer class
  * countup timer with millisecond views TextView
+ * MIT Licensed.
  * 
  * @author ishiisoft
  */
